@@ -1,8 +1,8 @@
 # Executables
-.exe
-.out
+*.exe
+*.out
 
 #Archivos objetos
-.obj
+*.obj
 
-.tds
+*.tds
