@@ -1,0 +1,8 @@
+# Executables
+.exe
+.out
+
+#Archivos objetos
+.obj
+
+.tds
