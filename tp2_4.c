@@ -13,6 +13,7 @@ struct compu
 
 void listarPCs(struct compu pc[], int cantidad);
 void mostrarMasVieja(struct compu pc[], int cantidad);
+void mostrarMasVeloz(struct compu pc[], int cantidad);
 
 int main()
 {
@@ -32,6 +33,7 @@ int main()
 
     listarPCs(PC, 5);
     mostrarMasVieja(PC, 5);
+    mostrarMasVeloz(PC, 5);
 
     return 0;
 }
@@ -78,4 +80,26 @@ void mostrarMasVieja(struct compu pc[], int cantidad)
     
 }
 
-    
+void mostrarMasVeloz(struct compu pc[], int cantidad)
+{
+    int indice = 0, actual =1;
+
+    for (int i = 0; i < cantidad; i++)
+    {
+        if (pc[i].velocidad > actual)
+        {
+            actual = pc[i].velocidad;
+            indice = i;
+        }
+        
+    }
+    printf("\n");
+
+    printf("La PC mas rapida.\n");
+    printf("Anio de fabricacion: %d\n", pc[indice].anio);
+    printf("-Velocidad: %d\n", pc[indice].velocidad);
+    printf("-Cantidad de nucleos: %d\n", pc[indice].cantidad_nucleos);
+    printf("Tipo de procesador: %s", pc[indice].tipo_cpu);
+
+    printf("\n");
+}    
