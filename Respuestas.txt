@@ -1,0 +1,14 @@
+# ¿Puede ver el archivo tp2_1_2.c? ¿Por qué?
+#No puedo verlo. Porque no tengo combinado mi rama Opcion_2 a mi rama principal main
+
+#En la rama main agregue un nuevo archivo que se llame Respuestas.txt y realice
+#un commit para agregar este archivo al repositorio.
+# En VSCode vuelva al “Source Control” ¿Qué diferencias nota?
+#Que mi rama Opcion_2 quedo "cortada"
+
+#En el Branch main se va a combinar (merge) ambos repositorios. Para esto, utilice
+#el siguiente comando:
+#o git merge Opcion_2 -m "merge Opcion_2" → combinamos
+#main con Opcion_2
+# En VSCode vuelva al “Source Control” vea los cambios, ¿Qué nota?
+# Mi rama Opcion_2 quedo unida nuevamente a mi rama principal main
